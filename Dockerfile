@@ -1,8 +1,8 @@
 FROM openjdk:13-alpine
 
 ENV TRIMMOMATIC_VERSION 0.38
-ENV TRIMMOMATIC_JAR_PATH Trimmomatic-${TRIMMOMATIC_VERSION}
-ENV TRIMMOMATIC_ADAPTERS_PATH Trimmomatic-${TRIMMOMATIC_VERSION}/adapters
+ENV TRIMMOMATIC_JAR_PATH /Trimmomatic-${TRIMMOMATIC_VERSION}
+ENV TRIMMOMATIC_ADAPTERS_PATH /Trimmomatic-${TRIMMOMATIC_VERSION}/adapters
 
 RUN apk add --no-cache wget zip && \
 wget -q http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-${TRIMMOMATIC_VERSION}.zip && \
